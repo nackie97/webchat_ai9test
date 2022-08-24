@@ -1,0 +1,9 @@
+version : '2.3'
+services :
+  server :
+    build: .
+    volumes :
+      - /app/node_modules
+      - ./:/app
+    ports:
+      - "3005:3005"
